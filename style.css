@@ -48,7 +48,7 @@ p {
   justify-content: center;
   text-align: center;
   gap: 2rem;
-  background-image: url("/img/race-track-flag.jpg");
+  background-image: url("img/race-track-flag.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -88,7 +88,7 @@ p {
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url("/img/light.png");
+  background-image: url("img/light.png");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -136,7 +136,7 @@ p {
   width: 100%;
   height: 100%;
   opacity: 50%;
-  background-image: url("/img/hornet_flags.png");
+  background-image: url("img/hornet_flags.png");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -155,7 +155,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("/img/gasstation.jpg");
+  background-image: url("img/gasstation.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -213,7 +213,7 @@ img#vaghen {
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url("/img/piston.png");
+  background-image: url("img/piston.png");
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
