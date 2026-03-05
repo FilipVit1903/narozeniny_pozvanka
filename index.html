@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>birthday-invite-kachoow</title>
+  </head>
+  <body>
+    <section class="hello">
+      <h2>PRO FULL EXPERIENCE SI ZAPNI ZVUK, STISKNI TLAČÍTKO A SWIPNI DOLŮ</h2>
+      <a id="play">FULL EXPERIENCE</a>
+      <p id="greet">KACHOOOW!!</p>
+    </section>
+    <section class="celebration">
+      <h2>
+        TÍMTO BYCH TĚ CHTĚL POZVAT KE SKROMNÉ OSLAVĚ MÉHO ŽIVOTNÍHO JUBILEA
+      </h2>
+      <img id="number" src="img\25.png" alt="" />
+    </section>
+    <section class="info">
+      <p>STŘEDA 18.3.</p>
+      <p>19:30</p>
+      <p>POKOJ B-209</p>
+      <p>OKOLO 23h PŘESUN DO ZANZIKU</p>
+      <img id="hornet" src="img\hornet.png" alt="" />
+    </section>
+    <section class="drink">
+      <h2>A CO BUDE K PITÍ?</h2>
+      <img id="vaghen" src="img\vaghen.png" alt="" />
+    </section>
+    <section class="alcohol">
+      <div class="alcohol__item">
+        <div class="alcohol__item--text">
+          RADEGAST 12 <br />
+          <span>plech či lahev</span>
+        </div>
+        <div class="alcohol__item--image">
+          <img
+            class="alcohol-car"
+            id="radegast"
+            src="img/radegast.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="alcohol__item">
+        <div class="alcohol__item--image">
+          <img class="alcohol-car" id="morgan" src="img/morgan.png" alt="" />
+        </div>
+        <div class="alcohol__item--text">
+          CAPTAIN MORGAN <br />
+          <span>cola bude taky</span>
+        </div>
+      </div>
+      <div class="alcohol__item">
+        <div class="alcohol__item--text">
+          ZELENÁ <br />
+          <span>pro svěží dech</span>
+        </div>
+        <div class="alcohol__item--image">
+          <img class="alcohol-car" id="zelena" src="img/zelena.png" alt="" />
+        </div>
+      </div>
+      <div class="alcohol__item">
+        <div class="alcohol__item--image">
+          <img
+            class="alcohol-car"
+            id="amundsen"
+            src="img/amundsen.png"
+            alt=""
+          />
+        </div>
+        <div class="alcohol__item--text">
+          AMUNDSENKA <br />
+          <span>ochucená</span>
+        </div>
+      </div>
+      <h2>DROBNÉ OBČERSTVENÍ BUDE TAKY</h2>
+    </section>
+    <section class="end">
+      <h2>TĚŠÍM SE NA TEBE!</h2>
+      <img id="mcqueen" src="img/mcqueen.png" alt="" />
+      <h2>BUDE SE TO PÍT JAKO DŽUS</h2>
+      <img id="logo" src="img/Filip_logo.png" alt="" />
+    </section>
+
+    <audio id="bgMusic">
+      <source src="/soundtrack/soundtrack.mp3" type="audio/mp3" />
+    </audio>
+
+    <script>
+      const audio = document.getElementById("bgMusic");
+      const greet = document.getElementById("greet");
+      const playButton = document.getElementById("play");
+
+      playButton.addEventListener(
+        "click",
+        function () {
+          audio.play();
+          greet.classList.add("visible");
+        },
+        { once: true },
+      );
+    </script>
+  </body>
+</html>

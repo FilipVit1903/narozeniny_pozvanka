@@ -1,0 +1,234 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Jaro", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 32px;
+  color: white;
+  letter-spacing: 0.8px;
+  position: relative;
+  text-align: center;
+  font-weight: 400;
+}
+
+p {
+  font-size: 24px;
+}
+
+#play {
+  position: relative;
+  padding: 1rem 2rem;
+  border-radius: 2rem 0 2rem 0;
+  border: 4px solid #fff;
+  background-image: linear-gradient(#fcc449, #f73922);
+  color: white;
+  cursor: pointer;
+  font-family: "Jaro", sans-serif;
+  font-size: 2rem;
+  z-index: +1;
+}
+
+.hello {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  background-image: url("/img/race-track-flag.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hello::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #5e0000;
+  mix-blend-mode: multiply;
+  position: absolute;
+}
+
+.hello::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #00000010;
+  position: absolute;
+}
+
+.celebration {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-image: linear-gradient(#a62424, #791c00);
+  position: relative;
+  text-align: center;
+}
+
+.celebration::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/light.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  background-size: contain;
+  opacity: 50%;
+}
+
+#number {
+  max-width: 220px;
+  height: auto;
+  position: relative;
+}
+
+#greet {
+  position: relative;
+  color: white;
+  font-size: 30px;
+  opacity: 0;
+  transform: scale(0.5); /* Začne trochu menší pro lepší efekt */
+  transition: all 0.5s ease-in-out; /* Tvoje požadovaná rychlost */
+}
+
+#greet.visible {
+  opacity: 1;
+  transform: scale(1.2); /* Trochu se zvětší, aby to víc "křičelo" */
+}
+
+.info {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #1a2755;
+  color: white;
+}
+
+.info p {
+  font-size: 30px;
+}
+.info::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+  background-image: url("/img/hornet_flags.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  background-size: contain;
+}
+
+#hornet {
+  max-width: 280px;
+  height: auto;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.drink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/img/gasstation.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+
+.drink::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000000b6;
+  position: absolute;
+}
+
+img#vaghen {
+  max-width: 170px;
+  height: auto;
+  position: relative;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+.alcohol {
+  color: #fff;
+  background-color: #000000;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.alcohol__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.alcohol__item--image img {
+  max-width: 180px;
+  height: auto;
+}
+
+.end {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #791c00;
+  gap: 5rem;
+  position: relative;
+}
+
+.end::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/piston.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  left: 0;
+  top: -12%;
+}
+
+#mcqueen {
+  max-width: 244px;
+  width: 100%;
+  margin-inline: auto;
+  position: relative;
+}
+
+#logo {
+  max-width: 120px;
+  margin-inline: auto;
+}
