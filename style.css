@@ -236,6 +236,12 @@ img#vaghen {
   position: relative;
 }
 
+@media screen and (max-width: 768px) and (max-height: 690px) {
+  .end {
+    gap: 3rem;
+  }
+}
+
 .end::before {
   content: "";
   width: 100%;
