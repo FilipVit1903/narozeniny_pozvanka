@@ -107,13 +107,13 @@ p {
   color: white;
   font-size: 30px;
   opacity: 0;
-  transform: scale(0.5); /* Začne trochu menší pro lepší efekt */
-  transition: all 0.5s ease-in-out; /* Tvoje požadovaná rychlost */
+  transform: scale(0.5);
+  transition: all 0.5s ease-in-out;
 }
 
 #greet.visible {
   opacity: 1;
-  transform: scale(1.2); /* Trochu se zvětší, aby to víc "křičelo" */
+  transform: scale(1.2);
 }
 
 .info {
@@ -135,12 +135,18 @@ p {
   content: "";
   width: 100%;
   height: 100%;
-  opacity: 50%;
+  opacity: 40%;
   background-image: url("img/hornet_flags.png");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .info::before {
+    max-width: 50%;
+  }
 }
 
 #hornet {
@@ -155,20 +161,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("img/gasstation.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  position: relative;
-}
 
-.drink::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #000000b6;
-  position: absolute;
+  position: relative;
 }
 
 img#vaghen {
@@ -179,11 +173,31 @@ img#vaghen {
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  img#vaghen {
+    max-width: 300px;
+  }
+}
+
 .alcohol {
   color: #fff;
-  background-color: #000000;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  position: relative;
+  background-image: url("img/hudson_bcg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.alcohol::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000000b6;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .alcohol__item {
@@ -192,11 +206,24 @@ img#vaghen {
   justify-content: center;
   gap: 1rem;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .alcohol__item--image img {
   max-width: 180px;
   height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .alcohol__item--image img {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .alcohol__item--text {
+    font-size: 2rem;
+  }
 }
 
 .end {
@@ -229,6 +256,6 @@ img#vaghen {
 }
 
 #logo {
-  max-width: 120px;
+  max-width: 160px;
   margin-inline: auto;
 }
